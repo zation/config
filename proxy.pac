@@ -1,7 +1,7 @@
-function FindProxyForURL(url, host) 
-{ 
- if (shExpMatch(url, "*.vpc.realestate.com.au*")) 
+function FindProxyForURL(url, host)
+{
+ if (shExpMatch(url, "http://www.app.hi-qa.vpc.realestate.com.au*"))
   return "DIRECT";
- else 
+ else
   return "PROXY 10.18.0.254:3128";
 }
